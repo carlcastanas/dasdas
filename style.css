@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fffaed;
+}
+body div.stamp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 345px;
+  background: #90c2d1;
+}
+body div.stamp::before {
+  content: "";
+  bottom: 0;
+  position: absolute;
+}
+body div.stamp::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #fffaed;
+  transform: translateY(-12px) translateX(12px);
+  box-shadow: 30px 0px #fffaed, 60px 0px #fffaed, 90px 0px #fffaed, 120px 0px #fffaed, 150px 0px #fffaed, 180px 0px #fffaed, 210px 0px #fffaed, 240px 0px #fffaed, 270px 0px #fffaed, 300px 0px #fffaed, 0px 205px #fffaed, 30px 205px #fffaed, 60px 205px #fffaed, 90px 205px #fffaed, 120px 205px #fffaed, 150px 205px #fffaed, 180px 205px #fffaed, 210px 205px #fffaed, 240px 205px #fffaed, 270px 205px #fffaed, 300px 205px #fffaed, -23px 25px #fffaed, -23px 55px #fffaed, -23px 85px #fffaed, -23px 115px #fffaed, -23px 145px #fffaed, -23px 175px #fffaed, 324px 25px #fffaed, 324px 55px #fffaed, 324px 85px #fffaed, 324px 115px #fffaed, 324px 145px #fffaed, 324px 175px #fffaed;
+}
+body div.inner-stamp {
+  display: flex;
+  align-items: end;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(#27272a, #304259);
+  height: 165px;
+  width: 310px;
+}
+body div.inner-stamp:before {
+  content: "Я тебя люблю";
+  color: #fffaed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-weight: 400;
+  font-family: Inter;
+  font-size: 12px;
+  width: 310px;
+  height: 26px;
+  background: #d14a45;
+  letter-spacing: 3px;
+  z-index: 100;
+  text-transform: uppercase;
+}
+body div.inner-stamp .house {
+  display: flex;
+  justify-content: center;
+  margin-left: 19px;
+  height: 30px;
+  margin-bottom: 10px;
+  width: 40px;
+  background: #fffaed;
+}
+body div.inner-stamp .house:before {
+  content: "";
+  position: absolute;
+  bottom: 39px;
+  width: 40px;
+  height: 25px;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  background: #fffaed;
+  z-index: 2;
+}
+body div.inner-stamp .house:after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  width: 50px;
+  height: 31px;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  background: #d14a45;
+  z-index: 1;
+}
+body div.inner-stamp .house .window {
+  transform: translateY(-10px);
+  height: 6.5px;
+  width: 5.2px;
+  background: #363334;
+  z-index: 3;
+  border-radius: 1px;
+  box-shadow: 12px 12px #363334, -12px 12px #363334, 0px 12px #363334, -12px 24px #363334, 0px 24px #363334, 12px 24px #363334;
+}
+body div.inner-stamp .house .window:before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  background: #d14a45;
+  border-radius: 1px;
+  z-index: 2;
+  transform: translateY(24px) translateX(-2.6px);
+}
+body .snow {
+  position: absolute;
+  background: #fffaed;
+  border-radius: 50%;
+  opacity: 0.7;
+  height: 2px;
+  width: 2px;
+}
+body span {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  color: #fffaed;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: "Dancing Script", cursive;
+}
+body span:before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  transform: translateX(-220px) translateY(20px);
+  background: #fffaed;
+  box-shadow: 0 0 14px yellow;
+}
+@media screen and (max-height: 600px) {
+  body .stamp {
+    transform: scale(1.1);
+  }
+}
